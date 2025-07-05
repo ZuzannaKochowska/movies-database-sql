@@ -71,30 +71,44 @@ group by rok
 order by liczba_filmow DESC
 limit 1;
 
-4. Zaawansowane zapytania JOIN (jeśli masz więcej tabel, np. actors, directors)
-Połącz filmy z tabelą reżyserów i wyświetl tytuły wraz z nazwiskami reżyserów.
 
-Wyświetl listę aktorów, którzy zagrali w filmach powyżej 7 średniej oceny.
+4. Podzapytania
+--Filmy z wyższą oceną niż średnia ocena wszystkich filmów
+SELECT title, vote_average FROM movies_clean
+WHERE vote_average > (
+		SELECT AVG(vote_average) FROM movies_clean);
 
-5. Podzapytania
-Znajdź filmy, których popularność jest wyższa niż średnia popularność wszystkich filmów.
+--Filmy z wyższą popularnością niż średnia popularność wszystkich filmów (liczone poprzez ilosć oddanych głosów na filmy)
+SELECT title, vote_count FROM Movies_clean
+WHERE vote_count > (
+		SELECT AVG(vote_count) FROM movies_clean
+					);
+					
+--Wyświetl filmy, które mają najwyższą ocenę w każdym języku.
+SELECT original_language, title, vote_average
+ FROM movies_clean
+ WHERE vote_average = (
+		SELECT MAX(vote_average) FROM movies_clean WHERE vote_count > 10000);
 
-Wyświetl filmy, które mają najwyższą ocenę w każdym języku.
+5. Modyfikacje danych
+--Zaktualizuj ocenę (vote_average) filmu o konkretnym id.
+UPDATE movies_clean 
+SET vote_average = 6.5
+WHERE id = 36593;
 
-6. Modyfikacje danych
-Zaktualizuj ocenę (vote_average) filmu o konkretnym id.
+--Usuń filmy wydane przed rokiem 1998.
+DELETE FROM movies_clean
+WHERE release_date < '1998-01-01';
 
-Usuń filmy wydane przed rokiem 1980.
-
-7. Tworzenie widoków i indeksów
+6. Tworzenie widoków i indeksów
 Stwórz widok pokazujący filmy z oceną powyżej 8 i datą premiery po 2015.
 
 Dodaj indeks na kolumnę original_language dla szybszego filtrowania.
 
-8. Transakcje
+7. Transakcje
 Wykonaj serię zmian (np. aktualizacja kilku filmów), a potem zrób rollback, by ćwiczyć transakcje.
 
-9. Eksport i import
+8. Eksport i import
 Wyeksportuj wybrane dane do pliku CSV.
 
 Zaimportuj zmodyfikowany plik z powrotem do bazy.
