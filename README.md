@@ -9,3 +9,17 @@ Technologie:
 - SQL (SELECT, WHERE, GROUP BY, JOIN, podzapytania, agregacje)
 - Python (do importu danych – opcjonalnie dodaj, jeśli masz repozytorium z tym skryptem)
 - Git & GitHub
+
+
+------------------- ENG -------------------
+
+This project contains a set of SQL queries created for the analysis of the movies_clean database. The aim of the project was to develop my SQL skills through practical analytical tasks and to prepare a material that can be used as part of my portfolio.
+
+-> The movies_clean table contains information about movies, such as: id, title, release date, original language, number of votes, average rating, budget, release date, duration, average reviewer rating, number of votes, etc.
+
+The data was taken from Kaggle, then cleaned and imported from a CSV file using Python (pandas + SQLAlchemy).
+
+Technologies:
+- MySQL
+- SQL (SELECT, WHERE, GROUP BY, JOIN, subqueries, aggregations)
+- Python (for data import - optionally add if you have a repository with this script)
