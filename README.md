@@ -7,7 +7,7 @@ Dane zostały podbrane z Kaggle, później oczyszczone i zaimportowane z pliku C
 Technologie:
 - MySQL
 - SQL (SELECT, WHERE, GROUP BY, JOIN, podzapytania, agregacje)
-- Python (do importu danych – opcjonalnie dodaj, jeśli masz repozytorium z tym skryptem)
+- Python, Pandas
 - Git & GitHub
 
 
@@ -22,4 +22,4 @@ The data was taken from Kaggle, then cleaned and imported from a CSV file using 
 Technologies:
 - MySQL
 - SQL (SELECT, WHERE, GROUP BY, JOIN, subqueries, aggregations)
-- Python (for data import - optionally add if you have a repository with this script)
+- Python, Pandas 
