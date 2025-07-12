@@ -1,6 +1,6 @@
 🎬 Projekt SQL – Analiza bazy danych filmowej `movies_clean`
 
-Ten projekt zawiera zestaw zapytań SQL stworzonych na potrzeby analizy bazy danych filmowej o nazwie `movies_clean`. Celem projektu było rozwijanie umiejętności pracy z językiem SQL poprzez praktyczne zadania analityczne oraz przygotowanie materiału, który może zostać wykorzystany jako część mojego portfolio.
+Ten projekt zawiera zestaw zapytań SQL w pliku **queries.sql** stworzonych na potrzeby analizy bazy danych filmowej o nazwie `movies_clean`. Celem projektu było rozwijanie umiejętności pracy z językiem SQL poprzez praktyczne zadania analityczne oraz przygotowanie materiału, który może zostać wykorzystany jako część mojego portfolio.
 
 Główna tabela:
 - **`movies_clean`** – zawiera podstawowe informacje o filmach, takie jak: `id`, `title`, `release_date`, `original_language`, `budget`, `revenue`, `runtime`, `vote_average`, `vote_count`, itp.
