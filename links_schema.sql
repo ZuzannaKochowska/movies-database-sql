@@ -1,5 +1,5 @@
 CREATE TABLE `links` (
-  `movieId` bigint DEFAULT NULL,
-  `imdbId` bigint DEFAULT NULL,
+  `movie_id` INT DEFAULT NULL,
+  `imdbId` INT DEFAULT NULL,
   `tmdbId` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
