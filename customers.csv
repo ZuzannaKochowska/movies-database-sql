@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,city,country
+1,Anna,Kowalska,anna.kowalska@email.com,Warszawa,Poland
+2,Jan,Nowak,jan.nowak@email.com,Krakow,Poland
+3,Klara,Miller,klara.muller@email.com,Berlin,Germany
+4,Peter,Smith,peter.smith@email.com,London,UK
+5,Maria,Rossi,maria.rossi@email.com,Rome,Italy
